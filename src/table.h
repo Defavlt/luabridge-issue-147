@@ -30,6 +30,10 @@ struct Table1 {
     const Table0 &get() const
     { return nested;
     }
+
+    Table0 &get()
+    { return nested;
+    }
 };
 
 #endif//TABLE_H
